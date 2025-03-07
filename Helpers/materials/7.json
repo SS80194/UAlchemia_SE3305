@@ -1,0 +1,51 @@
+{
+  "id": 7,
+  "name": "中和剂·红",
+  "tags": [
+    "中和剂"
+  ],
+  "materials": [
+    {
+      "type": "class",
+      "id": "水"
+    },
+    {
+      "type": "material",
+      "id": "4"
+    },
+    {
+      "type": "class",
+      "id": "火系"
+    }
+  ],
+  "base_elements": [
+    {
+      "id": "200010002:B"
+    },
+    {
+      "id": "020012000:R"
+    }
+  ],
+  "rewards": [
+    {
+      "level": 3,
+      "property": "火系",
+      "id": "000010000:R"
+    },
+    {
+      "level": 5,
+      "property": "火系",
+      "id": "010020000:R"
+    },
+    {
+      "level": 7,
+      "property": "火系",
+      "id": "020010020:R"
+    },
+    {
+      "level": 4,
+      "property": "草系",
+      "id": "010010000:G"
+    }
+  ]
+}

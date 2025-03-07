@@ -78,3 +78,5 @@ UAlchemia/.vscode/
 UAlchemia/*.code-workspace
 UAlchemia/.history/
 UAlchemia/*.vsix
+
+Helpers/JSONgenerator/__pycache__/

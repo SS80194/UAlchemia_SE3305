@@ -1,0 +1,2 @@
+# 这个项目主要使用Python标准库
+# Tkinter通常随Python一起安装，不需要额外安装 

@@ -1,0 +1,44 @@
+{
+  "id": 5,
+  "name": "炸弹",
+  "tags": [
+    "火系",
+    "燃料"
+  ],
+  "materials": [
+    {
+      "type": "material",
+      "id": "4"
+    },
+    {
+      "type": "class",
+      "id": "中和剂"
+    },
+    {
+      "type": "class",
+      "id": "燃料"
+    }
+  ],
+  "base_elements": [
+    {
+      "id": "200110000:R"
+    }
+  ],
+  "rewards": [
+    {
+      "level": 4,
+      "property": "火系",
+      "id": "200120000:R"
+    },
+    {
+      "level": 8,
+      "property": "火系",
+      "id": "020222020:R"
+    },
+    {
+      "level": 4,
+      "property": "水系",
+      "id": "010010002:B"
+    }
+  ]
+}

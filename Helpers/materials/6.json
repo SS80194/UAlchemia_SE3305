@@ -1,0 +1,43 @@
+{
+  "id": 6,
+  "name": "冰精",
+  "tags": [
+    "水系"
+  ],
+  "materials": [
+    {
+      "type": "class",
+      "id": "中和剂"
+    },
+    {
+      "type": "class",
+      "id": "水"
+    },
+    {
+      "type": "class",
+      "id": "纸"
+    }
+  ],
+  "base_elements": [
+    {
+      "id": "200010002:B"
+    }
+  ],
+  "rewards": [
+    {
+      "level": 3,
+      "property": "水系",
+      "id": "200020000:B"
+    },
+    {
+      "level": 7,
+      "property": "水系",
+      "id": "200012021:B"
+    },
+    {
+      "level": 2,
+      "property": "火系",
+      "id": "010020000:R"
+    }
+  ]
+}
