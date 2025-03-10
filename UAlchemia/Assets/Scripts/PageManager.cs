@@ -11,10 +11,13 @@ public class PageManager : MonoBehaviour
     public GameObject comissionPage;
     public GameObject savePage;     // 重新加回保存页面
     public GameObject shopPage;     // 新增商店页面
+
+    //public class AlchemyManager;
     
     // 返回按钮引用集合
     public Button[] backButtons;    // 改为按钮数组，收集所有页面的返回按钮
     
+
     // 当前页面和上一个页面的引用
     private GameObject currentPage;
     private GameObject previousPage;
@@ -56,6 +59,16 @@ public class PageManager : MonoBehaviour
         // 检测右键点击返回
         if (Input.GetMouseButtonDown(1) && pageHistory.Count > 1)
         {
+            // 如果当前页面可以自行处理返回(此处AlchemyManager)，则调用它的返回函数。
+            if (currentPage.GetComponentInChildren<AlchemyManager>() != null)
+            {
+                //Debug.Log("当前页面是AlchemyPage");
+                AlchemyManager alchemyManager = currentPage.GetComponentInChildren<AlchemyManager>();
+                if(alchemyManager.GoBack())
+                {
+                    return;
+                }
+            }
             GoBack();
         }
     }
@@ -146,6 +159,7 @@ public class PageManager : MonoBehaviour
     // 返回上一个页面
     public void GoBack()
     {
+        
         // 如果栈中至少有两个页面（当前页面和上一个页面）
         if (pageHistory.Count > 1)
         {
@@ -169,5 +183,6 @@ public class PageManager : MonoBehaviour
             ShowPage(mainPage);
             HideOtherPages(mainPage);
         }
+        return;
     }
 }
